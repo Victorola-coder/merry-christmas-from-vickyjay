@@ -20,6 +20,7 @@ const christMasFont = Mountains_of_Christmas({
 export default async function Home({ searchParams }: PageProps) {
   const name = searchParams.name ?? "to you";
   const isTobi = /tobi/i.test(name);
+  const isDefiBoy = /defiboy/i.test(name);
   const isAzrah = /azrah/i.test(name);
   const isVictor = /victor/i.test(name);
   const isSuwa = /suwa/i.test(name);
@@ -94,7 +95,7 @@ export default async function Home({ searchParams }: PageProps) {
             {isKiane && "Here's your christmas gift, Me!"}
           </TypographyH3>
           <TypographyH3>
-            {isTobi && "React-Typescript with a lot of API's"}
+            {isDefiBoy && "React-Typescript with a lot of API's"}
           </TypographyH3>
           <ChristmasGreetings />
         </div>
