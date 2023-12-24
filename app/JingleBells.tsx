@@ -6,7 +6,7 @@ import pepperMint from "@/public/peppermint.png";
 import Image from "next/image";
 
 export function JingleBells() {
-  const [play, setPlay] = useState(false);
+  const [play, setPlay] = useState(true);
 
   function togglePlay() {
     setPlay((prev) => !prev);
