@@ -31,6 +31,7 @@ export default async function Home({ searchParams }: PageProps) {
   const isKiane = /kiane/i.test(name);
   const isMuyiwa = /muyiwa/i.test(name);
   const isAopresh = /AoPresh/i.test(name);
+  const isTope = /mrTope/i.test(name);
 
   return (
     <main className='relative min-h-screen'>
@@ -99,7 +100,10 @@ export default async function Home({ searchParams }: PageProps) {
             {isDefiBoy && "React-Typescript with a lot of API's"}
           </TypographyH3>
           <TypographyH3>
-            {isAopresh && 'Happy to  have you my bro!💜'}
+            {isAopresh && 'Happy to have you my bro!💜'}
+          </TypographyH3>
+          <TypographyH3>
+            {isTope && 'Wishing you joy, laughter, and warmth, dear boss!'}
           </TypographyH3>
           <ChristmasGreetings />
         </div>
