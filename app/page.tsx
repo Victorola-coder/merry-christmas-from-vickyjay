@@ -32,6 +32,7 @@ export default async function Home({ searchParams }: PageProps) {
   const isMuyiwa = /muyiwa/i.test(name);
   const isAopresh = /AoPresh/i.test(name);
   const isTope = /mrTope/i.test(name);
+  const isPaul = /paul/i.test(name);
 
   return (
     <main className='relative min-h-screen'>
@@ -107,6 +108,9 @@ export default async function Home({ searchParams }: PageProps) {
           </TypographyH3>
           <ChristmasGreetings />
         </div>
+        <TypographyH3>
+          {isPaul && "Let's build and do more next year"}
+        </TypographyH3>
       </section>
       <div className='absolute inset-x-0 bottom-0 flex items-center justify-center p-2 text-xs'>
         Merry Christmas!
