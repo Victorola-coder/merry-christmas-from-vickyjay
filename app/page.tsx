@@ -35,6 +35,7 @@ export default async function Home({ searchParams }: PageProps) {
   const isPaul = /paul/i.test(name);
   const isHicode = /hicode/i.test(name);
   const isIsaac = /isaac/i.test(name);
+  const isMichael = /michael/i.test(name);
 
   return (
     <main className='relative min-h-screen'>
@@ -115,6 +116,7 @@ export default async function Home({ searchParams }: PageProps) {
           <TypographyH3>
             {isIsaac && 'Love you bro, send christmas bonus!'}
           </TypographyH3>
+          <TypographyH3>{isMichael && "Let's buils stuffs"}</TypographyH3>
           <ChristmasGreetings />
         </div>
       </section>
