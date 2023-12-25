@@ -107,12 +107,12 @@ export default async function Home({ searchParams }: PageProps) {
           <TypographyH3>
             {isTope && 'Wishing you joy, laughter, and warmth, dear boss!'}
           </TypographyH3>
+          <TypographyH3>{isPaul && 'FUCK you bro! build stuffs'}</TypographyH3>
+          <TypographyH3>
+            {isHicode && 'Love you bro, say Hi to mom!'}
+          </TypographyH3>
           <ChristmasGreetings />
         </div>
-        <TypographyH3>{isPaul && 'FUCK you bro! build stuffs'}</TypographyH3>
-        <TypographyH3>
-          {isHicode && 'Love you bro, say Hi to mom!'}
-        </TypographyH3>
       </section>
       <div className='absolute inset-x-0 bottom-0 flex items-center justify-center p-2 text-xs'>
         Merry Christmas!
